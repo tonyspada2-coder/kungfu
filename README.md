@@ -9,7 +9,7 @@
 功夫系统架构如下：
 * 后台核心（C++）
   * 长拳（longfist） - 金融交易相关的数据格式定义，提供涵盖 c++/python/javascript/sqlite 的序列化支持。
-  * 易筋经（yijinjing） - 专为金融交易设计的超低延迟时间序列内存数据库，提供纳秒级时间精度，可落地交易相关的全部数据。
+  * 易筋经（yijinjing） - 专为金融交易设计的超低延迟时间序列内存数据库，提供纳秒级时间精度，可落地交易相关的全部数据。详情请参考[设计文档](developer/yijinjing_design_doc.md)。
   * 咏春（wingchun） - 策略执行引擎，提供策略开发接口，实时维护策略账目及持仓情况。
 * 策略接口（C++/Python）
   * [RxCpp](https://github.com/ReactiveX/RxCpp) - 响应式事件处理框架，可对丰富数据类型的金融交易数据进行灵活处理。
